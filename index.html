@@ -10,11 +10,14 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="header__title">Lana Milbern</h1>
-            <h2 class="header__subtitle">Software Developer</h2>
-            <aside class="picture">
-                <img src="./images/Lana_Headshot.jpg" alt="picture__img">
-            </aside>
+            
+            <!-- <h2 class="header__subtitle">Software Developer</h2> -->
+            <!-- <aside class="picture">
+                <img src="./images/me.jpg" alt="picture__img">
+            </aside> -->
+            <div class="title">
+                <h1 class="header__title">Lana Milbern</h1>
+            </div>
             <nav class="header__nav">
                 <ul class="nav__links">
                     <li class="nav__links"><a href = "#about">About Me</a></li>
@@ -24,37 +27,74 @@
             </nav>
             
         </header>
-    
-        
+       
         <div class="main">
-            <section class="about" id = "about"></section>
-                <h2 class="about__title main-content__title">About Me</h2>
-                <p>I am an entry-level software developer with training in CSS, HTML, Java, and JavaScript based in Columbus, Ohio. I also have experience working with ArcGIS software. </p>
+            <section class="about" id ="about">
+                <article class="about__intro">
+                    <img class=" profile-picture" src="images/me.jpg" alt="Profile Picture."
+                        class="profile__img">
+                </article>
+                <article class="about__intro">
+                <p>I am an entry-level software developer with experience in application
+                    development, web page design, statistical analysis, and ArcGIS
+                    
+                    software. Demonstrated ability to complete long-term, multi-
+                    part projects. I am excited to continue my journey of life-long
+                    
+                    learning and problem-solving.</p>
+                </article>
               
+            </section>
+            <section class="skill-section">
+                <h1 class="main-content__title skill_title" id="skills">Skills</h1>
+                <p class="skills">
+                    JavaScript • MVC • HTML • CSS • Flexbox • Grid • JSON • Restful APIs • Java • Spring •
+                    Hibernate • JPA • TDD • Agile (Scrum) • Thymeleaf • Single Page Applications (SPA) • Responsive
+                    Design /Mobile • Object Oriented Programming (OOP) • Structured Query Language (SQL) •
+                    Relational
+                    Databases • VS Code • IntelliJ • Source Control / Git • Kanban board • Pair Programming
+                </p>
             </section>
             <section class="projects main__content">
                 <h2 class="main-content__title projects__title" id="projects">Projects</h2>
-                <article class="projects__project">
-                    <h3 class="project__title">Virtual Pet Application</h3>
-                    <a href="https://github.com/HagarTheHun/virtual-pets-CD-Project-Blue">Repository</a>
-                    <p class="project__description">As part of a team, I created a Virtual Pet Application in Java which allows user to create, adopt, and care for pets.</p>
-                    <img src="./images/VirtualPet.JPG" alt="" class="project__image">
-                   
-                </article>
-                <article class="projects__project">
-                    <h3 class="project__title">Virtual Pet Application</h3>
-                    <p class="project__description">As part of a team, I created a Virtual Pet Application in Java which allows user to create, adopt, and care for pets.</p>
-                    <img src="./images/VirtualPet.JPG" alt="" class="project__image">
-                </article><article class="projects__project">
-                    <h3 class="project__title">Virtual Pet Application</h3>
-                    <p class="project__description">As part of a team, I created a Virtual Pet Application in Java which allows user to create, adopt, and care for pets.</p>
-                    <img src="./images/VirtualPet.JPG" alt="" class="project__image">
-                </article>
+                <div class="project__articles">
+                    <article class="projects__project">
+                        <h3 class="project__title">6-1-Food Force</h3>
+                        <a href="https://github.com/61FoodForce/Final-project"><img src="./images/61foodforce.JPG" alt="" class="project__image"></a>
+                        <h5 class="project__skills">Java • HTML • CSS • Spring • Thymeleaf • IntelliJ • Git • GitHub • OOP</h5>
+                        <p class="project__description">A web application that allows charities to view and accept food donations made by local businesses. The site also provides information about fighting hunger and reducing food waste.</p>
+                    </article>
+                    <article class="projects__project">
+                        <h3 class="project__title">Donut Maker</h3>
+                        <a href="https://github.com/2021-Spring-Cohort/module-4-donut-maker-lmilbern91"><img src="./images/donutmaker2000.JPG" alt="" class="project__image"></a>
+                        <h5 class="project__skills">JavaScript • HTML • CSS • VS Code • Git • GitHub</h5>
+                        <p class="project__description">A single-page application clicker game inspired by Cookie Clicker. </p>
+                    </article>
+                    <article class="projects__project">
+                        <h3 class="project__title">ReviewCorps</h3>
+                        <a href="https://github.com/2021-Spring-Cohort/module-3-java-group-project---review-site-the-real-mvc"><img src="./images/reviewcorps.JPG" alt="" class="project__image"></a>
+                        <h5 class="project__skills">Java • HTML • CSS • Spring • Thymeleaf • VS Code • IntelliJ • Git • GitHub • OOP</h5>
+                        <p class="project__description">A website dedicated to reviewing mobile phones.</p>
+                    </article>
+                    <article class="projects__project">
+                        <h3 class="project__title">Virtual Pet Application</h3>
+                        <a href="https://github.com/HagarTheHun/virtual-pets-CD-Project-Blue"><img src="./images/VirtualPet.JPG" alt="" class="project__image"></a>
+                        <h5 class="project__skills">Java • IntelliJ • Git • GitHub • OOP</h5>
+                        <p class="project__description">A console application which allows user to create, adopt, and care for pets.</p>
+                    </article>
+                </div>
             </section>
             <section class="contacts" id="contacts">
-                <h2 class="contacts__title">Contact Lana</h2>
-                <a href="https://www.linkedin.com/in/lana-milbern-04a98a141/">LinkedIn</a>
-                <a href="https://github.com/lmilbern91">Github</a>
+                <h2 class="main-content__title">Contact Lana</h2>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/lana-milbern/" target="_blank">
+                        <img class="image-icon" src="./images/linkedin-logo.png" class="image-icon-a"
+                            alt="LinkedIn"></a>
+                    <a href="https://github.com/lmilbern91" target="_blank">
+                        <img class="image-icon" src="./images/githublogo.png" class="image-icon" alt="Github"></a>
+                    <a href="mailto:lmilbern91@gmail.com/">
+                        <img class="image-icon" src="./images/mail.png" class="image-icon" alt="Email"></a>
+                </div>
             </section>
         </div>
     </div>

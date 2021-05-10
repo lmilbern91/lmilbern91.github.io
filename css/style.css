@@ -2,19 +2,44 @@
 
 html{
     font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
 }
 .header{
-    background-color: cornflowerblue;
-}
-.container{
-    background-color: darksalmon;
+    background-color: rgb(255, 214, 255);
 }
 
+.container{
+    /* background-color:rgb(255, 191, 160); */
+    width: 1200px;
+}
+
+nav li {
+    padding: 0.5em;
+  }
+
 body{
-    background-color: rgb(165, 248, 206);
+    background-color: rgb(200, 182, 255);
 }
 
 img{
     border-radius: 5px;
 }
+
+a {
+    text-decoration: none; 
+    color: inherit;
+  }
+
+.skill-section{
+    background-color: rgb(184, 192, 255);}
+
+.projects{
+    background-color: rgb(187, 208, 255);
+}
+
+.image-icon {
+    width: 50px;
+    margin: -20px 20px 20px 20px;
+    border-radius: 50%;}
 
